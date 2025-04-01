@@ -1,0 +1,11 @@
+# Ignorar node_modules
+node_modules/
+
+# Ignorar archivos de log
+*.log
+
+# Ignorar el archivo .env con variables de entorno
+.env
+
+# Ignorar archivos de dependencias generados automáticamente
+package-lock.json
