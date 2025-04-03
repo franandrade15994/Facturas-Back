@@ -43,7 +43,7 @@ const postFactura = async (req, res) => {
             replyTo: "franandrade15994@gmail.com",
             subject: "Nueva Factura Cargada",
             html: `<p>Se ha cargado una nueva factura, haz click 
-                   <a href="https://facturas-bice.vercel.app/admin">Aqui</a> para aprobar o rechazar la factura.</p>`
+                   <a href="${process.env.URL_ADMIN}">Aqui</a> para aprobar o rechazar la factura.</p>`
         };
 
         await transporter.sendMail(mailOptions);
